@@ -1,93 +1,97 @@
 *{
     box-sizing: border-box;
-    margin: ();
-    padding:();
+    margin: 0;
+    padding: 0;
 }
 html{
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-body{
+body {
     background: #08111f;
     color: #edf4ff;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sanas-serif;
     min-height: 100vh;
 }
-button{
+button {
     background: #287ee8;
-    border: ();
+    border: 0;
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
 }
-button:hover{
+button:hover {
     background: #1765c3;
 }
-.brand{
+.brand {
     display: flex;
     align-items: center;
     gap: 12px;
+
 }
-.brand-logo{
+.brand-logo {
     background: #287ee8;
     border-radius: 10px;
-    padding: 12px 16px;
+    padding: 12px 20px;
     font-size: 23px;
     font-weight: bold;
 }
-.brand h1{
+.brand {
     color: #54a5ff;
     letter-spacing: 3px;
 }
-.brand p{
-    font-size: 9px;
-    color: #91aBc5;
+.brand {
+    font-size:9px;
+    color: #91a8c5;
 }
-.topbar{
+.topbar {
     min-height: 82px;
     display: flex;
-    align-items: space-between;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    padding: 15px 4%;
+    padding: 15px;
     background: #111f34;
     border-bottom: 1px solid #2a3d59;
+
 }
-nav{
-    display: flex;
+nav {
+    display:flex;
     gap: 20px;
+
 }
-nav a{
+nav a {
     color: #aebed3;
-    text-decoration: none;
+    text-decoration: name;
     font-size: 13px;
 }
-nav a:hover{
+nav a :hover {
     color: #54a5ff;
 }
-.header-right{
+.header-right {
     display: flex;
     align-items: center;
     gap: 8px;
     color: #39d6a0;
     font-size: 11px;
 }
-.online-dot{
-    width: 9px;
+.online-dot {
+    width: 8px;
     height: 9px;
-background: #39d6a0;
-border-radius: 50%
+    background: #39d6a0;
+    border-radius: 50%;
 }
-#clock{
-    color:white ;
+#clock {
+    color: white;
     margin-left: 10px;
     font-family: monospace;
 }
 .page{
-    padding: 35px,5%;
+    padding: 35px 5%;
 }
 .page p{
-    color: #91aac5;
+    color:#91a8c5
 }
 .kpi-grid{
     display: grid;
@@ -95,7 +99,7 @@ border-radius: 50%
     gap: 16px;
     margin-bottom: 30px;
 }
-.kpi-card,panel{
+.kpi-card, .panel{
     background: #14243a;
     border: 1px solid #2a4262;
     border-radius: 12px;
@@ -104,18 +108,115 @@ border-radius: 50%
     padding: 22px;
     transition: 0.2s;
 }
-kpi-card-hover{
+.kpi-card:hover
+{
     border-color: #438cff;
-    transform: translate(-3px);
+    transform: translateY(-3px);
+
 }
-.kpi-card-span{
+.kpi-card span {
     color: #91a8c5;
     font-size: 10px;
     letter-spacing: 1px;
+    font-weight:bold ;
+}
+.kpi-card h2{
+    color: #54a5ff;
+    font-size: 29px;
+    margin: 14px 0 8px;
+}
+.kpi-card p
+{
+    color: #91a8c5;
+    font-size: 12px;
+}
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section-heading h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.section-heading p {
+    color: #91a8c5;
+}
+.live-tag {
+    color: #39d6a0;
+    background: #12382f;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+.panel {
+    padding: 22px;
+    margin-bottom: 20px;
+    min-width: 0;
+}
+.panel-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.panel-title h2, .panel h2 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.panel-title p {
+    color: #91a8c5;
+    font-size: 12px;
+}
+#rover-search, .metric-heading select {
+    background: #0b1627;
+    border: 1px solid #2a4262;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #2a4262;
+    text-align: left;
+    font-size: 12px;
+}
+th {
+    color: #91a8c5;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+td {
+    color: #dce8f8;
+}
+tbody tr {
+    cursor: pointer;
+}
+tbody tr:hover {
+    background: #1b304b;
+}
+tbody tr.selected-row {
+    background: #254568;
+    outline: 1px solid #438cff;
+}
+tbody td:nth-child(3) {
+    color: #39d6a0;
     font-weight: bold;
 }
-.kpi-card-h2{
-    color: #54a5ff;
-    font-size: 20px;
-margin: 14px 0 8px;
+.table-note, .metric-note {
+    color: #91a8c5;
+    font-size: 12px;
+    margin-top: 12px;
 }
